@@ -1,0 +1,40 @@
+    1  docker swarm init
+    2  docker swarm init --advertise-addr 192.168.0.53
+    3  docker node ls
+    4  clear
+    5  docker node ls
+    6  docker node update --role manage node2
+    7  docker node update --role manager node2
+    8  docker node ls
+    9  docker node update --role manager node3
+   10  docker node ls
+   11  history
+   12  clear
+   13  docker node ls
+   14  docker service create --detach nginx:alpine ping 8.8.8.8
+   15  docker service ls
+   16  docker service update 6wli --replicas 3
+   17  docker service ls
+   18  docker service ps 6wli
+   19  docker service rm 6wli
+   20  docker service ls
+   21  docker service create --detach --replicas 3 -p 80:80  nginx:alpine
+   22  docker service ls
+   23  docker node ps
+   24  docker node ps node 2
+   25  docker service ps is1v
+   26  git init
+   27  git add .
+   28  git commit -m "Docekr commands"
+   29  git config --global user.email "jyotirmoy2411@outlook.com"
+   30  git config --global user.name "jyotirmoy-blockchain-dev"
+   31  git commit -m "Docker Commands"
+   32  clear
+   33  git remote add origin https://github.com/jyotirmoy-blockchain-dev/docker_tuts_commands.git
+   34  git push -u origin master
+   35  git push -u origin master
+   36  git push -u origin master
+   37  git push -u origin master
+   38  git push -u origin master
+   39  clear
+   40  history > docker_commands_feb-2019_15:05.text

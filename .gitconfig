@@ -1,2 +1,5 @@
 [url "https://"]   
     insteadOf = git://
+[user]
+	email = jyotirmoy2411@outlook.com
+	name = jyotirmoy-blockchain-dev
